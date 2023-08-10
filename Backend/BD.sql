@@ -1,3 +1,0 @@
-TOMANUCU
-TOMANUCUDENOVO
-nbfhjfghkjgkhjgjhgkhgoljgkj
