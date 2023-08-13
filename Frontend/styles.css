@@ -33,8 +33,9 @@
     .sidebar .text{
       font-size: 16px;
       font-weight: 500;
+      color: var(--text-color);
     }
-    .soderbar .img{
+    .siderbar .image{
       min-width: 60px;
       display: flex;
       align-items: center;
@@ -59,7 +60,7 @@
     } 
 
 
-    .sidebar .image-txt img{
+    .sidebar .image-text img{  
       width: 40px;
       border-radius: 6px;
       
@@ -67,7 +68,7 @@
       
     }
 
-    .sidebar header .image-txt{
+    .sidebar header .image-text{
     display: flex;
     align-items: center;   
     }
@@ -84,10 +85,10 @@
     }
 
     .header-text .proficao{
-      margin-top: -1;
+      margin-top: -2;
     }
 
-    .sidebar header .toggle{
+    .sidebar header .bxbx-chevron-right toggle{
       position:absolute;
       top: 50%;
       left: -25px;
