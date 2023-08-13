@@ -24,17 +24,75 @@
     --tran-05:all 0.5 ease ;
     
     }
+
+    body{
+      height: 100vh;
+      background:var(--boby-color);
+    }
+    /*==== Css reutilizaveis=====  */
+    .sidebar .text{
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .soderbar .img{
+      min-width: 60px;
+      display: flex;
+      align-items: center;
+
+    }
+
+
+
+
     /*====posiçao da sidebar=== */
     .sidebar{
       position:fixed;
       top: 0;
       left: 0;
       height:100%;
+      width: 250px;
+      padding: 10px 14px;
+      background: var(--sidebar-color);
     }
+    .sidebar header{
+      position: relative;
+    } 
+
+
     .sidebar .image-txt img{
       width: 40px;
       border-radius: 6px;
-      width: 250px;
-      background: var(--sidebar-color);
       
+      
+      
+    }
+
+    .sidebar header .image-txt{
+    display: flex;
+    align-items: center;   
+    }
+
+    header .image-txt .header-text{
+      display: flex;
+      flex-direction: column;
+      
+    }
+
+    .header-text .name{
+      font-weight: 600;
+
+    }
+
+    .header-text .proficao{
+      margin-top: -1;
+    }
+
+    .sidebar header .toggle{
+      position:absolute;
+      top: 50%;
+      left: -25px;
+      transform: translateY(-50%);
+      height: 25px;
+      width: 25px;
+      background: var(--primary-color);
     }
