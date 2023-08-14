@@ -307,3 +307,16 @@ body.dark .switch::before{
 body.dark .home .text{
     color: var(--text-color);
 }
+.texto{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+    margin: 0 auto; 
+    padding: 80px; 
+    
+}
+h1{
+    font-size: 35px;
+}
+h2{
+    font-size: 28px;
+}
