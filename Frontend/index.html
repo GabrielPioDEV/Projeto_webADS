@@ -1,10 +1,12 @@
+<!-- Coding by CodingLab | www.codinglabweb.com -->
 <!DOCTYPE html>
 <html lang="Pt-Br">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solait cursos</title>
+    <viewport-length>
     <!--==== link para pasta de styles.css ====--> 
     <link rel="stylesheet" href="styles.css">   
     <!--==== Boxicons CSS ====-->
@@ -13,21 +15,92 @@
 
 </head>
 <body>
-    <nav class="sidebar">
+    <nav class="sidebar close">
         <header>
             <div class="image-text">
               <span class="image"> 
-                <img src="mascoteSolait.png" alt=""> <!-- logo do site vai ser inserido aqui-->
+                <img src="mascoteSolait.png" alt="logo"> <!-- logo do site vai ser inserido aqui-->
               </span>
 
-              <div class="text header-text">
-                <span class="name">Solait</span>
-                <sapan class="proficao">Cursos DEV </sapan>
-              </div>
+                <div class="text logo-text">
+                    <span class="name">Solait</span>
+                    <span class="profession">Cursos Dev</span>
+                </div>
             </div>
 
-            <i class="bx bx-chevron-right toggle"></i>
+            <i class='bx bx-chevron-right toggle'></i>
         </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Início</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-desktop icon' ></i>
+                            <span class="text nav-text">Cursos</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-book icon'></i>
+                            <span class="text nav-text">Exercício</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-comment icon' ></i>
+                            <span class="text nav-text">Comentários</span>
+                        </a>
+                    </li>
+
+                    
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+
     </nav>
+
+    <section class="home">
+        <div class="text">Dashboard Sidebar</div>
+    </section>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
