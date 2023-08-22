@@ -1,14 +1,32 @@
-const body = document.querySelector('body'),
-      sidebar = body.querySelector('nav'),
-      toggle = body.querySelector(".toggle"),
-      searchBtn = body.querySelector(".search-box"),
-      modeSwitch = body.querySelector(".toggle-switch"),
-      modeText = body.querySelector(".mode-text");
+/*========== Código javascript para a barra lateral ==========*/
 
+/*========== Colocando interação na divs class para que elas possam ser selecionadas ==========*/
+const body = document.querySelector('body'),
+    sidebar = body.querySelector('nav'),
+    toggle = body.querySelector(".toggle"),
+    searchBtn = body.querySelector(".search-box"),
+    modeSwitch = body.querySelector(".toggle-switch"),
+    modeText = body.querySelector(".mode-text");
+
+<<<<<<< HEAD
 // Função para definir o tema
 function setTheme(theme) {
     body.classList.remove("dark", "light");
     body.classList.add(theme);
+=======
+
+/*========== Colocando a função de clicar nas divs. ("Transformando elas em botões") ==========*/
+toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+searchBtn.addEventListener("click" , () =>{
+    sidebar.classList.remove("close");
+})
+
+modeSwitch.addEventListener("click" , () =>{
+    body.classList.toggle("dark");
+>>>>>>> 40bbe089387dd2a17fcd694a7b335060e80fe99c
     
     if (theme === "dark") {
         modeText.innerText = "Light mode";
