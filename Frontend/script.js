@@ -1,6 +1,4 @@
-/*========== Código javascript para a barra lateral ==========*/
-
-/*========== Colocando interação na divs class para que elas possam ser selecionadas ==========*/
+/* Selecionando os elementos do DOM */
 const body = document.querySelector('body'),
     sidebar = body.querySelector('nav'),
     toggle = body.querySelector(".toggle"),
@@ -8,15 +6,32 @@ const body = document.querySelector('body'),
     modeSwitch = body.querySelector(".toggle-switch"),
     modeText = body.querySelector(".mode-text");
 
-
-/*========== Colocando a função de clicar nas divs. ("Transformando elas em botões") ==========*/
-toggle.addEventListener("click" , () =>{
+/* Definindo a função para alternar a barra lateral */
+toggle.addEventListener("click", () => {
     sidebar.classList.toggle("close");
-})
+});
 
-searchBtn.addEventListener("click" , () =>{
+/* Definindo a função para abrir a barra lateral ao clicar na caixa de busca */
+searchBtn.addEventListener("click", () => {
     sidebar.classList.remove("close");
-})
+});
 
-modeSwitch.addEventListener("click" , () =>{
-    body.classList.toggle("dark");})
+/* Definindo a função para alternar entre os modos claro e escuro */
+modeSwitch.addEventListener("click", () => {
+    body.classList.toggle("dark");
+    
+    // Salvando o modo escuro no armazenamento local (localStorage)
+    if (body.classList.contains("dark")) {
+        localStorage.setItem("darkMode", "enabled");
+    } else {
+        localStorage.setItem("darkMode", "disabled");
+    }
+});
+
+/* Verificando o modo escuro ao carregar a página */
+window.addEventListener("load", () => {
+    const darkModeStatus = localStorage.getItem("darkMode");
+    if (darkModeStatus === "enabled") {
+        body.classList.add("dark");
+    }
+});
