@@ -35,3 +35,74 @@ window.addEventListener("load", () => {
         body.classList.add("dark");
     }
 });
+
+
+
+
+/*testeee*/
+/*===================alterações exercicios=======================*/
+const question = document.querySelector(".question");
+const answers = document.querySelector(".answers");
+const spanDaQuantidade = document.querySelector(".spanDaQuantidade");
+const textfinal = document.querySelector(".final span");
+const conteudo = document.querySelector(".conteudo");
+const conteudofinal = document.querySelector(".final");
+const btnRestart = document.querySelector(".final button");
+
+import questions from "./questions.js";
+
+let currentIndex = 0;
+let questionsCorrect = 0;
+
+btnRestart.onclick = () => {
+  conteudo.style.display = "flex";
+  conteudofinal.style.display = "none";
+
+  currentIndex = 0;
+  questionsCorrect = 0;
+  loadQuestion();
+};
+
+function nextQuestion(e) {
+  if (e.target.getAttribute("data-correct") === "true") {
+    questionsCorrect++;
+  }
+
+  if (currentIndex < questions.length - 1) {
+    currentIndex++;
+    loadQuestion();
+  } else {
+    final();
+  }
+}
+
+function final() {
+  textfinal.innerHTML = `Você acertou ${questionsCorrect} de ${questions.length}`;
+  conteudo.style.display = "none";
+  conteudofinal.style.display = "flex";
+}
+
+function loadQuestion() {
+  spanDaQuantidade.innerHTML = `${currentIndex + 1}/${questions.length}`;
+  const item = questions[currentIndex];
+  answers.innerHTML = "";
+  question.innerHTML = item.question;
+
+  item.answers.forEach((answer) => {
+    const div = document.createElement("div");
+
+    div.innerHTML = `
+    <button class="answer" data-correct="${answer.correct}">
+      ${answer.option}
+    </button>
+    `;
+
+    answers.appendChild(div);
+  });
+
+  document.querySelectorAll(".answer").forEach((item) => {
+    item.addEventListener("click", nextQuestion);
+  });
+}
+
+loadQuestion();

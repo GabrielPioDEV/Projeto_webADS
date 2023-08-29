@@ -362,4 +362,67 @@ h1{
 }
 h2{
     font-size: 28px;
+    text-align: center;
 }
+h3{
+    font-size: 28px;
+    text-align: center;
+}
+
+
+
+/*====================== Alterações estilização do quiz ==============================*/
+main {
+    margin: 0 auto;
+    background-color: cadetblue;
+    padding: 38px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .conteudo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+  
+  /*quantidade de questoes realizadas*/
+  .spanDaQuantidade {
+    text-align: end;
+  }
+  
+  /*respostas*/
+  .answers {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  /*botoes de interaçaõ*/
+  button {
+    width: 100%;
+    text-align: start;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+  }
+  
+  /*termino do questionario*/
+  .final {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .final button {
+    text-align: center;
+  }
