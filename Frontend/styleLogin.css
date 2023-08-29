@@ -1,0 +1,20 @@
+body{
+    margin: 0;
+}
+
+.main-login{
+    width:100vw;
+    height: 100vh;
+    background: #00a86b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
