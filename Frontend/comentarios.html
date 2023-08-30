@@ -8,8 +8,8 @@
     <viewport-length>
 
     <!-- Link para integração de pasta styles.css--> 
-    <link rel="stylesheet" href="styles.css">   
-    
+    <link rel="stylesheet" href="styles.css"> 
+
     <!-- Link para integraçaõ com os boxicons Css-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
@@ -42,6 +42,7 @@
                     <i class='bx bx-search icon'></i>
                     <input type="text" placeholder="Pesquisa...">
                 </li>
+
     <!-- MENU DE NAVEGAÇÃO (em lista): Início-->
                 <ul class="menu-links">
                     <li class="nav-link">
@@ -89,7 +90,7 @@
                     </a>
                 </li>
 
-     <!-- MENU DE NAVEGAÇÃO (em lista): Modo escuro-->
+    <!-- MENU DE NAVEGAÇÃO (em lista): Modo escuro-->
                 <li class="mode">
                     <div class="sun-moon">
                         <i class='bx bx-moon icon moon'></i>
@@ -106,18 +107,41 @@
         </div>
 
     </nav>
-
-     <!-- Texto de apresentação do Início-->
+<!-- Título comntários disponíveis-->
     <section class="home">
-        <div class="text">Início</div>
-        <div class="texto">
-        <h1 class="text nav-text">Solait</h1>
-        <h2  class="text nav-text">O que é o Solait Cursos?</h2>
-        <p class="text nav-text">É uma plataforma de cursos gratuita criada para atender a comunidade que quer começar a aprender programação. O solait disponibiliza alguns vídeos e exercícios para despertar o interesse das pessoas pela tecnologia.</p>
+        <div class="text">Comentários: </div>
+        <div  class="texto" > 
+            <h2 class="text">Destaque</h2>
+
+            <div id="disqus_thread"></div>
+    <script>
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+        
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = Comentario; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://solait.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    <script id="dsq-count-scr" src="//solait.disqus.com/count.js" async></script>
+         
         </div>
     </section>
 
-     <!-- Integração com o JavaScript-->
+    
+
+ <!-- Integração com o JavaScript-->
     <script src="script.js" type="module"></script>
+
 </body>
 </html>
