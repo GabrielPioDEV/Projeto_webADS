@@ -7,7 +7,7 @@
     font-family: 'Roboto Slab', serif;;
 }
 body{
-    background-image: url(telas-de-computadores.jpg);
+    background: #E4E9F7;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -27,7 +27,8 @@ body{
     width: 930px;
 }
 .img-box{
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 168, 107);
+    box-shadow: 0px 10px 20px #2d8061;
     width: 50%;
     display: flex;
     align-items: center;
@@ -38,21 +39,23 @@ body{
     width: 100%;
 }
 .form-box{
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(0, 168, 107);
+    box-shadow: 0px 10px 20px #2d8061;
     backdrop-filter: blur(40px);
     padding: 30px 40px;
     width: 50%;
     border-radius: 0 20px 20px 0;
 }
-.form-box h2{
-    font-size: 30px;
+.form-box h1{
+    font-size: 35px;
+    
 }
 .form-box p{
     font-weight: bold;
-    color: #3D3D3D;
+    color: #eccdff;
 }
 .form-box p a{
-    color: #0e7751;
+    color: #a200ff7a;
     text-decoration: none;
 }
 .form-box form{
@@ -62,7 +65,7 @@ form .input-group{
     margin-bottom: 15px;
 }
 form .input-group label{
-    color: #3D3D3D;
+    color: #eccdff;
     font-weight: bold;
     display: block;
     margin-bottom: 5px;
@@ -71,6 +74,7 @@ form .input-group input{
     width: 100%;
     height: 47px;
     background-color: rgba(255, 255, 255, 0.32);
+    box-shadow: 0px 10px 20px #2d8061;
     border-radius: 20px;
     outline: none;
     border: 2px solid transparent;
@@ -85,7 +89,7 @@ form .input-group input:focus{
 form .input-group button{
     width: 100%;
     height: 47px;
-    background: #00a86b;
+    background: #a200ff;
     border-radius: 20px;
     outline: none;
     border: none;
@@ -93,6 +97,7 @@ form .input-group button{
     color: white;
     cursor: pointer;
     font-size: 16px;
+    box-shadow: 0px 10px 20px #2d8061;
 }
 @media (max-width:930px) {
     .img-box{
