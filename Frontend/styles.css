@@ -374,7 +374,7 @@ h3{
 /*====================== Alterações estilização do quiz ==============================*/
 main {
     margin: 0 auto;
-    background-color: #00a86b;
+    background-color: #00a86a;
     padding: 38px;
     border-radius: 10px;
     width: 100%;
@@ -404,7 +404,7 @@ main {
     gap: 5px;
   }
   
-  /*botoes de interaçaõ*/
+  /*botoes de interação*/
   button {
     width: 100%;
     text-align: start;
@@ -412,11 +412,11 @@ main {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    background-color: black;
+    background-color: rgba(128, 128, 128, 0.623);
     color: white;
   }
   
-  /*termino do questionario*/
+  /*término do questionario*/
   .final {
     display: none;
     flex-direction: column;

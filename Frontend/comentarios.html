@@ -54,6 +54,22 @@
                         </a>
                     </li>
 
+                    <!-- MENU DE NAVEGAÇÃO (em lista): Cadastro-->
+                    <li class="nav-link">
+                        <a href="cadasto.html">
+                            <i class='bx bx-list-check icon' ></i>
+                            <span class="text nav-text">Cadastro</span>
+                        </a>
+                    </li>
+
+                    <!-- MENU DE NAVEGAÇÃO (em lista): Login-->
+                    <li class="nav-link">
+                        <a href="login.html">
+                            <i class='bx bx-log-in icon' ></i>
+                            <span class="text nav-text">Login</span>
+                        </a>
+                    </li>
+
     <!-- MENU DE NAVEGAÇÃO (em lista): Cursos-->
                     <li class="nav-link">
                         <a href="curso.html">
@@ -84,7 +100,7 @@
     <!-- MENU DE NAVEGAÇÃO (em lista): Opção de sair da página-->
             <div class="bottom-content">
                 <li class="">
-                    <a href="#">
+                    <a href="index.html">
                         <i class='bx bx-log-out icon' ></i>
                         <span class="text nav-text">Sair</span>
                     </a>
@@ -115,16 +131,15 @@
 
             <div id="disqus_thread"></div>
     <script>
-        /**
-        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+        /*  Variáveis de configuração: (muito importante nos comentários)*/
+        /*api de comentários*/
         
         var disqus_config = function () {
-        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = Comentario; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = PAGE_URL;  
+        this.page.identifier = Comentario; // Variável da página que vai ser inserida os comentários
         };
         
-        (function() { // DON'T EDIT BELOW THIS LINE
+        (function() { // Recomendável não editar essa função, pode dar problema
         var d = document, s = d.createElement('script');
         s.src = 'https://solait.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());

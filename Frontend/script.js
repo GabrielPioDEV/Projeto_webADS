@@ -39,8 +39,9 @@ window.addEventListener("load", () => {
 
 
 
-/*testeee*/
-/*===================alterações exercicios=======================*/
+
+/*===================alterações exercicios (quiz)=======================*/
+/*Declaração de variáveis*/ 
 const question = document.querySelector(".question");
 const answers = document.querySelector(".answers");
 const spanDaQuantidade = document.querySelector(".spanDaQuantidade");
@@ -49,10 +50,10 @@ const conteudo = document.querySelector(".conteudo");
 const conteudofinal = document.querySelector(".final");
 const btnRestart = document.querySelector(".final button");
 
-import questions from "./questions.js";
+import questions from "./questions.js";     //importando os dados das questões
 
-let currentIndex = 0;
-let questionsCorrect = 0;
+let currentIndex = 0;     //dados da questão atual (que está na tela do usuário)
+let questionsCorrect = 0;   //número de acertos
 
 btnRestart.onclick = () => {
   conteudo.style.display = "flex";
@@ -75,14 +76,14 @@ function nextQuestion(e) {
     final();
   }
 }
-
+  //mostrar a quantidade de acertos
 function final() {
   textfinal.innerHTML = `Você acertou ${questionsCorrect} de ${questions.length}`;
   conteudo.style.display = "none";
   conteudofinal.style.display = "flex";
 }
 
-function loadQuestion() {
+function loadQuestion() {         //mostrar a quantidade de questões que ainda faltam para o quiz acabar
   spanDaQuantidade.innerHTML = `${currentIndex + 1}/${questions.length}`;
   const item = questions[currentIndex];
   answers.innerHTML = "";
@@ -91,15 +92,16 @@ function loadQuestion() {
   item.answers.forEach((answer) => {
     const div = document.createElement("div");
 
-    div.innerHTML = `
-    <button class="answer" data-correct="${answer.correct}">
+    /*Armazenar o botão da questão correta*/
+    div.innerHTML = `       
+    <button class="answer" data-correct="${answer.correct}"> 
       ${answer.option}
     </button>
     `;
 
     answers.appendChild(div);
   });
-
+      //ao clicar em uma opção do quiz ele passa para próxima questão
   document.querySelectorAll(".answer").forEach((item) => {
     item.addEventListener("click", nextQuestion);
   });
