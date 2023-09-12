@@ -1,6 +1,7 @@
 /*Importação da fonte */
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto+Slab:wght@300;400;500&display=swap');
 *{
+    /*Definiçoes de margem e o tipo da fonte que irá ser usada na estilização da páina de cadastro*/
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -8,6 +9,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
+    /*Cor de fundo, no caso, atrás da página que o usuário interage*/
     background: #E4E9F7;
     background-position: center;
     background-repeat: no-repeat;
@@ -19,15 +21,18 @@ body{
     min-height: 100vh;
 }
 .w50{
+    /*Estilização e tamanho das caixas interativas de Senha e Confimar senha*/
     width: 50%;
     float: left;
     padding-right: 15px;
 }
 .box{
+    /*Tamanho da box, me refiro a caixa verde em que está atrás das interações*/
     display: flex;
     width: 930px;
 }
 .img-box{
+    /*Aqui fica a estilização da box atrás da logo, já que tem duas box*/
     background-color: rgba(0, 168, 107);
     width: 50%;
     display: flex;
@@ -35,9 +40,11 @@ body{
     padding: 20px;
     border-radius: 20px  0 0 20px;
 }
+    /*Aqui é onde fica a Logo da Solait, suas proporçoes*/
 .img-box img{
     width: 100%;
 }
+    /*Estilização da segunda box*/
 .form-box{
     background-color: rgba(0, 168, 107);
     backdrop-filter: blur(40px);
@@ -45,24 +52,30 @@ body{
     width: 50%;
     border-radius: 0 20px 20px 0;
 }
+    /*Tamanho da fonte "Criar Conta"*/
 .form-box h1{
     font-size: 35px;
     
 }
+    /*Cor da fonte "Já é um membro?"*/
 .form-box p{
     font-weight: bold;
     color: white;
 }
+    /*Cor da fonte "Login"*/
 .form-box p a{
     color: rgb(91, 91, 158);
     text-decoration: none;
 }
+    /*Espaçamento das fontes "Já é um membro?" e "Nome Completo"*/
 .form-box form{
     margin: 20px 0;
 }
+    /*Espaçamento entre os caixas de interação*/
 form .input-group{
     margin-bottom: 15px;
 }
+    /*Cor das fontes de cada caixa e o espaçamento entre as palavras e a caixa*/
 form .input-group label{
     color: white;
     font-weight: bold;
@@ -70,6 +83,7 @@ form .input-group label{
     margin-bottom: 5px;
 }
 form .input-group input{
+    /*Largura e altura das caixas de interação, junto com algumas estilizações da mesma*/
     width: 100%;
     height: 47px;
     background-color: rgba(255, 255, 255, 0.32);
@@ -84,6 +98,7 @@ form .input-group input{
 form .input-group input:focus{
     border-color: #ff008869;
 }
+    /*Cor, largura da caixa "Cadastrar", junta com a estilização da palavra "Cadastrar"*/
 form .input-group button{
     width: 100%;
     height: 47px;
