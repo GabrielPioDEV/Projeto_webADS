@@ -426,3 +426,47 @@ main {
   .final button {
     text-align: center;
   }
+
+  
+  /* Estilização para o carrossel */
+
+
+  .d-block w-100{
+    
+ 
+    max-width: 800px; /* Define a largura máxima do carrossel */
+    margin: 0 auto; /* Centraliza o carrossel horizontalmente */
+}
+
+.carousel-item {
+    text-align: center; /* Centraliza o conteúdo dentro dos slides */
+}
+
+.carousel-item img {
+    max-width: 100%; /* Certifica-se de que as imagens não ultrapassem o slide */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estilização para os indicadores (pontos) */
+.carousel-indicators {
+    bottom: 10px; /* Define a posição dos indicadores em relação ao carrossel */
+}
+
+/* Estilização para os controles de navegação */
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para os controles */
+    border: none; /* Remove as bordas dos controles */
+    font-size: 24px; /* Tamanho da seta dos controles */
+    width: auto; /* Define a largura automática dos controles */
+    height: auto; /* Define a altura automática dos controles */
+    line-height: 1; /* Remove o espaço extra ao redor do texto do controle */
+}
+
+/* Estilização para as setas dos controles */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    color: #fff; /* Cor das setas */
+}
+
+  
