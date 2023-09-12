@@ -58,6 +58,7 @@ import questions from "./questions.js";     //importando os dados das questões
 let currentIndex = 0;     //dados da questão atual (que está na tela do usuário)
 let questionsCorrect = 0;   //número de acertos
 
+//ao terminar o quiz aparece uma opçaõ de refazer, que vai reiniar o quiz
 btnRestart.onclick = () => {
   conteudo.style.display = "flex";
   conteudofinal.style.display = "none";
@@ -67,11 +68,13 @@ btnRestart.onclick = () => {
   loadQuestion();
 };
 
+//verificar se a questão está correta e armazenar nas questões corretas que vão estar no final do quiz
 function nextQuestion(e) {
   if (e.target.getAttribute("data-correct") === "true") {
     questionsCorrect++;
   }
 
+  //verificar se não é a ultima questão
   if (currentIndex < questions.length - 1) {
     currentIndex++;
     loadQuestion();
@@ -92,6 +95,8 @@ function loadQuestion() {         //mostrar a quantidade de questões que ainda 
   answers.innerHTML = "";
   question.innerHTML = item.question;
 
+  //for each para item
+  //cria div com create element
   item.answers.forEach((answer) => {
     const div = document.createElement("div");
 
@@ -102,6 +107,7 @@ function loadQuestion() {         //mostrar a quantidade de questões que ainda 
     </button>
     `;
 
+      //puxando para answers o inner html 
     answers.appendChild(div);
   });
       //ao clicar em uma opção do quiz ele passa para próxima questão
