@@ -6,6 +6,9 @@ const body = document.querySelector('body'),
     modeSwitch = body.querySelector(".toggle-switch"),
     modeText = body.querySelector(".mode-text");
 
+/* Removendo a classe 'close' para deixar a barra lateral aberta inicialmente */
+sidebar.classList.remove("close");
+    
 /* Definindo a função para alternar a barra lateral */
 toggle.addEventListener("click", () => {
     sidebar.classList.toggle("close");
