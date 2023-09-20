@@ -10,7 +10,7 @@
 }
 body{
     /*Cor de fundo, no caso, atrás da página que o usuário interage*/
-    background: #E4E9F7;
+    background: #201100;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -33,7 +33,7 @@ body{
 }
 .img-box{
     /*Aqui fica a estilização da box atrás da logo, já que tem duas box*/
-    background-color: rgba(0, 168, 107);
+    background-color: #000000;
     width: 50%;
     display: flex;
     align-items: center;
@@ -46,7 +46,7 @@ body{
 }
     /*Estilização da segunda box*/
 .form-box{
-    background-color: rgba(0, 168, 107);
+    background-color: #000000;
     backdrop-filter: blur(40px);
     padding: 30px 40px;
     width: 50%;
@@ -55,6 +55,7 @@ body{
     /*Tamanho da fonte "Criar Conta"*/
 .form-box h1{
     font-size: 35px;
+    color: #ffc787;
     
 }
     /*Cor da fonte "Já é um membro?"*/
@@ -64,7 +65,7 @@ body{
 }
     /*Cor da fonte "Login"*/
 .form-box p a{
-    color: rgb(91, 91, 158);
+    color: #ffc787;
     text-decoration: none;
 }
     /*Espaçamento das fontes "Já é um membro?" e "Nome Completo"*/
@@ -74,10 +75,11 @@ body{
     /*Espaçamento entre os caixas de interação*/
 form .input-group{
     margin-bottom: 15px;
+    color: #ffc787;
 }
     /*Cor das fontes de cada caixa e o espaçamento entre as palavras e a caixa*/
 form .input-group label{
-    color: white;
+    color: #ffc787;
     font-weight: bold;
     display: block;
     margin-bottom: 5px;
@@ -86,23 +88,23 @@ form .input-group input{
     /*Largura e altura das caixas de interação, junto com algumas estilizações da mesma*/
     width: 100%;
     height: 47px;
-    background-color: rgba(255, 255, 255, 0.32);
+    background-color: #00a86b;
     border-radius: 20px;
     outline: none;
-    border: 2px solid transparent;
+    border: #ff8800 2px solid transparent;
     padding: 15px;
     font-size: 15px;
-    color: #616161;
+    color: #ffa33b;
     transition: all 0.4s ease;
 }
 form .input-group input:focus{
-    border-color: #ff008869;
+    border-color: #ff8800;
 }
     /*Cor, largura da caixa "Cadastrar", junta com a estilização da palavra "Cadastrar"*/
 form .input-group button{
     width: 100%;
     height: 47px;
-    background: #a200ff;
+    background: #ff8800;
     border-radius: 20px;
     outline: none;
     border: none;
@@ -112,6 +114,11 @@ form .input-group button{
     font-size: 16px;
     box-shadow: 0px 10px 20px #2d8061;
 }
+
+form .input-group > input::placeholder{
+    color:#ffc787;
+}
+
 @media (max-width:930px) {
     .img-box{
         display: none;

@@ -12,7 +12,7 @@ body * {
 .main-login{
     width:100vw;
     height: 100vh;
-    background: #E4E9F7;
+    background: #201100;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,7 +29,7 @@ body * {
 
 .left-login > h1{
     font-size: 3vw;
-    color:#005838;
+    color:#ff8800;
 }
 
 .login-image{
@@ -51,13 +51,13 @@ body * {
     align-items: center;
     flex-direction: column;
     padding: 30px 35px;
-    background: rgba(0, 168, 107);
+    background: black;
     border-radius: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .card-login > h1{
-    color: black;
+    color: #ff8800;
     font-weight: 700;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -70,6 +70,7 @@ body * {
     align-items: flex-start;
     justify-content: center;
     margin: 10px 0px;
+    color: #ff8800;
 }
 
 .textfield > input{
@@ -77,15 +78,15 @@ body * {
     border: none;
     border-radius: 10px;
     padding: 15px;
-    background: rgba(255, 255, 255, 0.32); /**/
-    color:#3b005e;
+    background: #00a86b; /**/
+    color:#ffa33b;
     font-size: 12pt;
     outline: none;
     box-sizing: border-box;
 }
 
 .textfield > label{
-    color: white;
+    color: #ffc787;
     margin-bottom: 10px;
     font-weight: bold;
     display: block;
@@ -93,7 +94,7 @@ body * {
 }
 
 .textfield > input::placeholder{
-    color:#eccdff;
+    color:#ffc787;
 }
 
 .btn-login{
@@ -107,7 +108,7 @@ body * {
     font-weight: 750;
     letter-spacing: 1px;
     color:white;
-    background: #a200ff;
+    background: #ff8800;
     cursor: pointer;
     font-family: Arial, Helvetica, sans-serif;
 }
