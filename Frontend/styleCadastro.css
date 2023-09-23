@@ -1,5 +1,8 @@
 /*Importação da fonte */
-@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto+Slab:wght@300;400;500&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
 *{
     /*Definiçoes de margem e o tipo da fonte que irá ser usada na estilização da páina de cadastro*/
     padding: 0;

@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
 
 body{
     margin: 0;
@@ -111,6 +113,22 @@ body * {
     background: #ff8800;
     cursor: pointer;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.cadastro{
+    color: white;
+    font-weight: bold;
+}
+
+/*Cor da fonte "Já é um membro?"*/
+.cadastro p{
+    font-weight: bold;
+    color: white;
+}
+    /*Cor da fonte "Login"*/
+.cadastro p a{
+    color: #ffc787;
+    text-decoration: none;
 }
 
 @media only screen and (max-width: 950px){
