@@ -10,34 +10,34 @@ body{
 body * {
     box-sizing: border-box;
 }
-
+    /*Fundo do site*/
 .main-login{
     width:100vw;
     height: 100vh;
-    background: #201100;
+    background: #bfbcbc;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+    /*Tamanho e definições da box*/
 .left-login{
-    width: 50vw;
+    width: 60vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-
+    /*Fonte SolaIT*/
 .left-login > h1{
     font-size: 3vw;
-    color:#ff8800;
+    color:#5c5b5b;
 }
-
+    /*Gif da garota estudando*/
 .login-image{
     width: 35vw;
 }
-
+    /*Largura da box*/
 .right-login{
     width: 50vw;
     height: 100vh;
@@ -53,18 +53,20 @@ body * {
     align-items: center;
     flex-direction: column;
     padding: 30px 35px;
-    background: black;
+    background: rgb(57, 54, 54);
     border-radius: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+    /*Acesse sua conta*/
 .card-login > h1{
-    color: #ff8800;
+    color: #ffffff;
     font-weight: 700;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+    /*Largura das caixas de texto*/
 .textfield{
     width: 100%;
     display: flex;
@@ -72,7 +74,7 @@ body * {
     align-items: flex-start;
     justify-content: center;
     margin: 10px 0px;
-    color: #ff8800;
+    color: #ffffff;
 }
 
 .textfield > input{
@@ -80,15 +82,15 @@ body * {
     border: none;
     border-radius: 10px;
     padding: 15px;
-    background: #00a86b; /**/
-    color:#ffa33b;
+    background: #4a4a4a; 
+    color:#ffffff;
     font-size: 12pt;
     outline: none;
     box-sizing: border-box;
 }
 
 .textfield > label{
-    color: #ffc787;
+    color: #ffffff;
     margin-bottom: 10px;
     font-weight: bold;
     display: block;
@@ -96,21 +98,21 @@ body * {
 }
 
 .textfield > input::placeholder{
-    color:#ffc787;
+    color:#ffffff;
 }
 
 .btn-login{
     width: 100%;
     padding: 10px 0px;
-    margin: 25px;
+    margin: 25px;   
     border: none;
     border-radius: 8px;
     outline: none;
     text-transform: uppercase;
     font-weight: 750;
     letter-spacing: 1px;
-    color:white;
-    background: #ff8800;
+    color:rgb(0, 0, 0);
+    background: #4a8e45;
     cursor: pointer;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -123,11 +125,11 @@ body * {
 /*Cor da fonte "Já é um membro?"*/
 .cadastro p{
     font-weight: bold;
-    color: white;
+    color: rgba(255, 255, 255, 0.609);
 }
     /*Cor da fonte "Login"*/
 .cadastro p a{
-    color: #ffc787;
+    color: #fffffff9;
     text-decoration: none;
 }
 
