@@ -50,6 +50,7 @@ body * {
     width: 60%;
     display: flex;
     justify-content: center;
+    box-shadow: 0px 10px 20px #3f3f3f;
     align-items: center;
     flex-direction: column;
     padding: 30px 35px;
@@ -98,7 +99,7 @@ body * {
 }
 
 .textfield > input::placeholder{
-    color:#ffffff;
+    color:#9b9696;
 }
 
 .btn-login{
@@ -114,6 +115,7 @@ body * {
     color:rgb(0, 0, 0);
     background: #4a8e45;
     cursor: pointer;
+    box-shadow: 0px 10px 20px #28892d82;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -122,12 +124,12 @@ body * {
     font-weight: bold;
 }
 
-/*Cor da fonte "Já é um membro?"*/
+/*Cor da fonte "Não é um membro?"*/
 .cadastro p{
     font-weight: bold;
     color: rgba(255, 255, 255, 0.609);
 }
-    /*Cor da fonte "Login"*/
+    /*Cor da fonte "Cadastre-se "*/
 .cadastro p a{
     color: #fffffff9;
     text-decoration: none;
