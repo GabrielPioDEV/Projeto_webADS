@@ -1,37 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleLogin.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
-    <title>Login</title>
+    <title>Formulário</title>
 </head>
+
 <body>
-    <div class="main-login">
-        <div class="left-login">
-            <h1>>Sola.IT<</h1>
-            <img src="estudo.svg" class="login-image" alt="Garota Estudando">
+    <div class="container">
+        <div class="form-image">
+            <img src="undraw_programming_re_kg9v.svg" alt="">
         </div>
-        <div class="right-login">
-            <div class="card-login">
-                <h1>Acesse sua conta</h1>
-                <div class="textfield">
-                    <label for="usuario">E-mail</label>
-                    <input type="text" id="Digite seu e-mail" placeholder="Digite seu e-mail" required>
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Entrar na conta</h1>
+                    </div>
+                    <div class="login-button">
+                        <button><a href="#">Registrar</a></button>
+                    </div>
                 </div>
-                <div class="textfield">
-                    <label for="senha">Senha</label>
-                    <input type="password" id="Digite sua senha" placeholder="Digite sua senha" required>
+
+                <div class="input-group">
+
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+                    </div>
+
                 </div>
-                <button class="btn-login">Login</button>
-                <div class="cadastro">
-                    <p>Não é um membro? <a href="cadasto.html">Cadastre-se!</a></p>
+
+                <div class="continue-button">
+                    <button><a href="#">Continuar</a> </button>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
 </body>
+
 </html>

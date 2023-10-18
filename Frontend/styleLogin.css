@@ -1,166 +1,204 @@
-*{
-    font-family: 'Poppins', sans-serif;
-}
-
-body{
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
+* {
+    padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-body * {
     box-sizing: border-box;
-}
-    /*Fundo do site*/
-.main-login{
-    width:100vw;
-    height: 100vh;
-    background: #bfbcbc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-    /*Tamanho e definições da box*/
-.left-login{
-    width: 60vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-    /*Fonte SolaIT*/
-.left-login > h1{
-    font-size: 3vw;
-    color:#5c5b5b;
-}
-    /*Gif da garota estudando*/
-.login-image{
-    width: 35vw;
-}
-    /*Largura da box*/
-.right-login{
-    width: 50vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-family: 'Inter', sans-serif;
 }
 
-.card-login{
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    box-shadow: 0px 10px 20px #3f3f3f;
-    align-items: center;
-    flex-direction: column;
-    padding: 30px 35px;
-    background: rgb(57, 54, 54);
-    border-radius: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-    /*Acesse sua conta*/
-.card-login > h1{
-    color: #ffffff;
-    font-weight: 700;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-    /*Largura das caixas de texto*/
-.textfield{
+body {
     width: 100%;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     justify-content: center;
-    margin: 10px 0px;
-    color: #ffffff;
+    align-items: center;
+    background: rgba(14, 96, 14, 0.559);
 }
 
-.textfield > input{
-    width: 100%;
+.container {    
+    width: 80%;
+    height: 70vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.498);
+}
+
+.form-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #46380c82;
+    padding: 10rem;
+}
+
+.form-image img {
+    width: 40rem;
+}
+
+.form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 1rem;
+}
+
+.form-header {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-button {
+    display: flex;
+    align-items: center;
+}
+
+.login-button button {
+    border: none;
+    background-color: #4a8e45;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 10px 20px #28892d82
+}
+
+.login-button button:hover {
+    background-color: #4a8e45;
+}
+
+.login-button button a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+}
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 9.5rem;
+    height: 0.3rem;
+    background-color: #4a8e45;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
     border: none;
     border-radius: 10px;
-    padding: 15px;
-    background: #4a4a4a; 
-    color:#ffffff;
-    font-size: 12pt;
-    outline: none;
-    box-sizing: border-box;
+    box-shadow: 1px 1px 6px #00000065   ;
+    font-size: 1rem;
 }
 
-.textfield > label{
-    color: #ffffff;
-    margin-bottom: 10px;
-    font-weight: bold;
-    display: block;
-    margin-bottom: 5px;
+.input-box input:hover {
+    background-color: #eeeeee75;
 }
 
-.textfield > input::placeholder{
-    color:#9b9696;
+.input-box input:focus-visible {
+    outline: 1px solid #4a8e45;
 }
 
-.btn-login{
+.input-box label,
+.gender-title h6 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.input-box input::placeholder {
+    color: #000000be;
+}
+
+.gender-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 .5rem;
+}
+
+.gender-input {
+    display: flex;
+    align-items: center;
+}
+
+.gender-input input {
+    margin-right: 0.35rem;
+}
+
+.gender-input label {
+    font-size: 0.81rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.continue-button button {
     width: 100%;
-    padding: 10px 0px;
-    margin: 25px;   
+    margin-top: 2.5rem;
     border: none;
-    border-radius: 8px;
-    outline: none;
-    text-transform: uppercase;
-    font-weight: 750;
-    letter-spacing: 1px;
-    color:rgb(0, 0, 0);
-    background: #4a8e45;
+    background-color: #4a8e45;
+    padding: 0.62rem;
+    border-radius: 5px;
     cursor: pointer;
-    box-shadow: 0px 10px 20px #28892d82;
-    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 10px 20px #28892d82
 }
 
-.cadastro{
-    color: white;
-    font-weight: bold;
+.continue-button button:hover {
+    background-color: #4a8e45;
 }
 
-/*Cor da fonte "Não é um membro?"*/
-.cadastro p{
-    font-weight: bold;
-    color: rgba(255, 255, 255, 0.609);
-}
-    /*Cor da fonte "Cadastre-se "*/
-.cadastro p a{
-    color: #fffffff9;
+.continue-button button a {
     text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
 }
 
-@media only screen and (max-width: 950px){
-    .card-login{
-        width: 85%;
-    }
-}
-
-
-@media only screen and (max-width: 600px){
-    .main-login{
-        flex-direction: column;
-    }
-    .left-login > h1{
+@media screen and (max-width: 1330px) {
+    .form-image {
         display: none;
     }
-    .left-login{
+    .container {
+        width: 50%;
+    }
+    .form {
         width: 100%;
-        height: auto;
     }
-    .right-login{
-        width: 100%;
-        height: auto;
-    }
-    .login-image{
-        width: 50vw;
-    }
-    .card-login{
+}
+
+@media screen and (max-width: 1064px) {
+    .container {
         width: 90%;
+        height: auto;
+    }
+    .input-group {
+        flex-direction: column;
+        z-index: 5;
+        padding-right: 5rem;
+        max-height: 10rem;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+    }
+    .gender-inputs {
+        margin-top: 2rem;
+    }
+    .gender-group {
+        flex-direction: column;
+    }
+    .gender-title h6 {
+        margin: 0;
+    }
+    .gender-input {
+        margin-top: 0.5rem;
     }
 }
