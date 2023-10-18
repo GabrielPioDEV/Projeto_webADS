@@ -11,12 +11,11 @@
 
 /*==========Edição das cores e transições da página ==========*/
 :root{
-    --body-color: rgba(0, 0, 0, 0.111);
-    --sidebar-color: #242526;
-    --primary-color: #4a8e45;
+    --sidebar-color: #242526b8;
+    --primary-color: #d4d3d3;
     --primary-color-light: #3a3b3c;
     --toggle-color: #fff;
-    --text-color: #ccc;
+    --text-color: #ffffff;
 
     /*===== Transições =====*/
     --tran-03: all 0.2s ease;
@@ -27,7 +26,7 @@
 
 body{
     min-height: 100vh;
-    background-color: var(--body-color);
+    background-image: linear-gradient(  rgba(20, 122, 20, 0.763), rgba(0, 0, 255, 0.524)) ;
     transition: var(--tran-05);
 }
 
