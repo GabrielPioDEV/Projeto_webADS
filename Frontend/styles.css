@@ -330,8 +330,9 @@ body.dark .switch::before{
 .home .text{
     font-size: 30px;
     font-weight: 500;
-    color: var(--text-color);
+    color: black;
     padding: 12px 60px;
+    
 }
 
 /*========== TÍTULO DA PÁGINA: Alinhamento da div Início ==========*/
@@ -351,6 +352,8 @@ body.dark .home .text{
     width: 80%;
     margin: 0 auto; 
     padding: 80px; 
+    color: black;
+
     
 }
 
@@ -388,6 +391,7 @@ main {
     flex-direction: column;
     width: 100%;
     gap: 10px;
+    
   }
   
   /*quantidade de questoes realizadas*/
