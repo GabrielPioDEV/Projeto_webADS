@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos</title>
+    <viewport-length>
+
+    <!-- Link para integração de pasta styles.css--> 
+    <link rel="stylesheet" href="styles.css">   
+
+    <!-- Link para integraçaõ com os boxicons Css-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!--Icone do site na barra de navegação web-->
+    <link rel="icon" href="Imagens/mascoteSolaitCCC.png">
+
+
+</head>
+<body>
+    <!-- Aplicação da logo do site -->
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+              <span class="image"> 
+                <img src="Imagens/mascoteSolaitWhite.png" alt ="logo"> 
+              </span>
+
+    <!-- Título da barra lateral-->
+                <div class="text logo-text">
+                    <span class="name">Solait</span>
+                    <span class="profession">Cursos Dev</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+    <!-- MENU DE NAVEGAÇÃO (em lista): Opção de pesquisa-->
+        <div class="menu-bar">
+            <div class="menu">
+
+                
+
+    <!-- MENU DE NAVEGAÇÃO (em lista): Início-->
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="index.html">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Início</span>
+                        </a>
+                    </li>
+
+                    <!-- MENU DE NAVEGAÇÃO (em lista): Cadastro-->
+                    <li class="nav-link">
+                        <a href="cadastro">
+                            <i class='bx bx-list-check icon' ></i>
+                            <span class="text nav-text">Cadastro</span>
+                        </a>
+                    </li>
+
+                    <!-- MENU DE NAVEGAÇÃO (em lista): Login-->
+                    <li class="nav-link">
+                        <a href="login">
+                            <i class='bx bx-log-in icon' ></i>
+                            <span class="text nav-text">Login</span>
+                        </a>
+                    </li>
+
+    <!-- MENU DE NAVEGAÇÃO (em lista): Cursos-->
+                    <li class="nav-link">
+                        <a href="curso.html">
+                            <i class='bx bx-desktop icon' ></i>
+                            <span class="text nav-text">Cursos</span>
+                        </a>
+                    </li>
+
+    <!-- MENU DE NAVEGAÇÃO (em lista): Exercícios-->
+                    <li class="nav-link">
+                        <a href="exercicio.html">
+                            <i class='bx bx-book icon'></i>
+                            <span class="text nav-text">Exercício</span>
+                        </a>
+                    </li>
+
+    <!-- MENU DE NAVEGAÇÃO (em lista): Comentários -->
+                    <li class="nav-link">
+                        <a href="comentarios.html">
+                            <i class='bx bx-comment icon' ></i>
+                            <span class="text nav-text">Comentários</span>
+                        </a>
+                    </li>
+
+                    
+            </div>
+
+    <!-- MENU DE NAVEGAÇÃO (em lista): Opção de sair da página-->
+            <div class="bottom-content">
+                <li class="">
+                    <a href="index.html">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Sair</span>
+                    </a>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+<!-- Título comntários disponíveis-->
+    <section class="home">
+        <div class="text">Cursos: </div>
+        <div  class="texto" > 
+            <h2 class="text"> <iframe width="600" height="360" src="https://www.youtube.com/embed/mfG8UUSMldA" title="Curso de HTML e CSS  - Sintaxe HTML [Aula 02]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></h2>
+
+            <div id="disqus_thread"></div>
+            <script>
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                
+                
+                var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = Comentario; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                
+                (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://solait.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        
+            <script id="dsq-count-scr" src="//solait.disqus.com/count.js" async></script>
+                 
+                </div>
+            </section>
+    
+
+ <!-- Integração com o JavaScript-->
+    <script src="Scripts/script.js" type="module"></script>
+
+</body>
+</html>

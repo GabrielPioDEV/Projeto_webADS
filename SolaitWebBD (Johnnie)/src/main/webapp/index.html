@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link para bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Solait cursos</title>
+    <!--link do bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <viewport-length>
+
+        <!-- Link para integração de pasta styles.css-->
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- Link para integraçaõ com os boxicons Css-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        
+        <!--Icone do site na barra de navegação web-->
+        <link rel="icon" href="Imagens/mascoteSolaitCCC.png">
+
+
+</head>
+
+<body>
+    <!-- Aplicação da logo do site -->
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="Imagens/mascoteSolaitWhite.png" alt="logo">
+                </span>
+
+                <!-- Título da barra lateral-->
+                <div class="text logo-text">
+                    <span class="name">Solait</span>
+                    <span class="profession">Cursos Dev</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+                
+                <!-- MENU DE NAVEGAÇÃO (em lista): Início-->
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="index.html">
+
+                            <i class='bx bx-home-alt icon'></i>
+                            <span class="text nav-text"> Início</span>
+
+                        </a>
+                    </li>
+
+                    <!-- MENU DE NAVEGAÇÃO (em lista): Cadastro-->
+                    <li class="nav-link">
+                        <a href="cadastro">
+                            <i class='bx bx-list-check icon'></i>
+                            <span class="text nav-text">Cadastro</span>
+                        </a>
+                    </li>
+
+                    <!-- MENU DE NAVEGAÇÃO (em lista): Login-->
+                    <li class="nav-link">
+                        <a href="login">
+                            <i class='bx bx-log-in icon'></i>
+                            <span class="text nav-text">Login</span>
+                        </a>
+                    </li>
+
+                    <!-- MENU DE NAVEGAÇÃO (em lista): Cursos-->
+                    <li class="nav-link">
+                        <a href="curso.html">
+                            <i class='bx bx-desktop icon'></i>
+                            <span class="text nav-text">Cursos</span>
+                        </a>
+                    </li>
+
+                    <!-- MENU DE NAVEGAÇÃO (em lista): Exercícios-->
+                    <li class="nav-link">
+                        <a href="exercicio.html">
+                            <i class='bx bx-book icon'></i>
+                            <span class="text nav-text">Exercício</span>
+                        </a>
+                    </li>
+
+                    <!-- MENU DE NAVEGAÇÃO (em lista): Comentários -->
+                    <li class="nav-link">
+                        <a href="comentarios.html">
+                            <i class='bx bx-comment icon'></i>
+                            <span class="text nav-text">Comentários</span>
+                        </a>
+                    </li>
+
+
+            </div>
+
+            <!-- MENU DE NAVEGAÇÃO (em lista): Opção de sair da página-->
+            <div class="bottom-content">
+                <li class="">
+                    <a href="index.html">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav-text">Sair</span>
+                    </a>
+                </li>
+
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- Texto de apresentação do Início-->
+    <section class="home">
+        <div class="text">Início</div>
+        <div class="texto">
+            <h1 class="text nav-text">Solait</h1>
+            <h2 class="text nav-text">O que é o Solait Cursos?</h2>
+            <p class="text nav-text">É uma plataforma de cursos gratuita criada para atender a comunidade que quer
+                começar a aprender programação. O solait disponibiliza alguns vídeos e exercícios para despertar o
+                interesse das pessoas pela tecnologia.</p>
+        </div>
+
+
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <!-- Inicio dos indicadores-->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <!--Fim dos indicadores -->
+    
+            <!-- Incio slide carousel-->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="source/css.jpg" class="d-block w-100" alt="imagem 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="source/html5.jpg" class="d-block w-100" alt="imagem 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="source/Js.jpg" class="d-block w-100" alt="imagem 3">
+                </div>
+                <!-- Fim slide carousel-->
+    
+                <!--inico anterior e proximo slide-->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+                <!--Fim anterior e proximo slide-->
+    </section>
+    
+   
+    <!--Link JS bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <!-- Integração com o JavaScript-->
+    <script src="Scripts/script.js" type="module"></script>
+</body>
+
+</html>
