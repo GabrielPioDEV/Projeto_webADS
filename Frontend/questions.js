@@ -3,43 +3,83 @@
 /*armazenar dados das questões: Pergunta, alternativas e respostas*/ 
 export default [  
     {
-      question: "1- O que é uma variável?",
+      question: "1- O que é uma biblioteca em programação?",
       answers: [
-        { option: "A) É algo que consegue reter e representar um valor ou expressão", correct: true },
-        { option: "B) É uma palavra", correct: false },
-        { option: "C) faz referencia a um nome de cachorro", correct: false },
+        { option: "A) É um conjunto de funções que estão dentro de uma linguagem e podem ser utilizadas mediante sua importação", correct: true },
+        { option: "B) É um conjunto de funções que só podem ser usadas por quem as fez", correct: false },
+        { option: "C) É um recurso utilizado para que o desenvolvedor possa executar o código em modo debug, estritamente na linguagem C    ", correct: false },
       ],
     },
     {
-      question: "2- Quais são as vantagens do javascript em relação a outras tecnologias web?",
+      question: "2- Qual a sintaxe da função main na linguagem C?",
       answers: [
-        { option: "A) Ele não apresenta vantagens", correct: false },
-        { option: "B) Melhora na interação, boa interface de usuário, frameworks", correct: true },
-        { option: "C) Péssima interação, não ser web", correct: false },
+        { option: "A) (main) integer{}", correct: false },
+        { option: "B) int main() {}", correct: true },
+        { option: "C) integer {}(main)", correct: false },
       ],
     },
     {
-      question: "3- Quais as características do JS?",
+      question: "3- Baseado na linguagem C, qual a opção que traz o comando de saída e o de entrada respectivamente?",
       answers: [
-        { option: "A) Não ser orientada a objeto", correct: false },
-        { option: "B) Não ter compatibilidade com muitas plataformas", correct: false },
-        { option: "C) Código aberto, Orientação a objeto", correct: true },
+        { option: "A) printarf() e scanear()", correct: false },
+        { option: "B) scanf() e printf()", correct: false },
+        { option: "C) printf() e scanf()  ", correct: true },
       ],
     },
     {
-      question: "4- Javascript é uma linguagem de programaçaõ?",
+      question: "4- Baseado na linguagem C, qual a opção que mostra uma variável do tipo decimal, inteiro, caracter e lógica respectivamente?",
       answers: [
-        { option: "A) Depende do ponto de vista", correct: false },
-        { option: "B) Não", correct: false },
-        { option: "C) Sim", correct: true },
+        { option: "A) float, int, boolean, char", correct: false },
+        { option: "B) int, char, float, boolean", correct: false },
+        { option: "C) float, int, char, boolean", correct: true },
       ],
     },
     {
-        question: "5- O que faz o compilador?",
+        question: "5- Para que serve a função main?",
         answers: [
-          { option: "A) Não existe isso na programação", correct: false },
-          { option: "B) Só analisa o código", correct: false },
-          { option: "C) Lê e analisa o código da aplicação", correct: true },
+          { option: "A) serve como uma função qualquer", correct: false },
+          { option: "B) serve como o ponto final para que o programa execute", correct: false },
+          { option: "C) serve como ponto inicial para que o programa possa ser executado ", correct: true },
         ],
       },
+      {
+      question: "6- Qual das opções apresenta um estrutura condicional?",
+      answers: [
+        { option: "A) if() {} else() {}", correct: true },
+        { option: "B)  while() {}", correct: false },
+        { option: "C) for() {}", correct: false },
+      ],
+    },
+    {
+      question: "7- Qual a lógica da estrutura condicional if else?",
+      answers: [
+        { option: "A) é estabelecida uma repetição, se ela ela é atendida o bloco executa o if, senão ele executa o else", correct: false },
+        { option: "B) é estabelecida uma condição, se ela ela é atendida o bloco executa o else, senão ele executa o if", correct: false },
+        { option: "C) é estabelecida uma condição, se ela ela é atendida o bloco executa o if, senão ele executa o else", correct: true },
+      ],
+    },
+    {
+      question: "8- É possível utilizar somente o if em um código?",
+      answers: [
+        { option: "A) Sim, ele pode ser usado sozinho", correct: true },
+        { option: "B) Não, ele não pode ser usado sozinho", correct: false },
+        { option: "C) Sim, mas somente se declarar uma variável pra ele", correct: false },
+      ],
+    },
+    {
+      question: "9- O que significa os dois &&?",
+      answers: [
+        { option: "A) é um operador lógico, ele analisa duas condições e só retorna verdadeiro quando ambas condições forem falsas", correct: false },
+        { option: "B) é um operador lógico, ele analisa duas condições e só retorna verdadeiro quando ambas condições forem verdadeiras", correct: true },
+        { option: "C) é um operador lógico, ele analisa duas condições e só retorna verdadeiro quando uma condição for verdeira e a outra falsa ", correct: false },
+      ],
+    },
+    {
+      question: "10- Qual opção corresponde aos operadores lógicos maior que e menor que, respectivamente?",
+      answers: [
+        { option: "A) > e >", correct: false },
+        { option: "B) > e <", correct: true },
+        { option: "C) < e >", correct: false },
+      ],
+    },
   ];

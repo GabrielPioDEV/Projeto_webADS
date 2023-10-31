@@ -14,11 +14,6 @@ toggle.addEventListener("click", () => {
     sidebar.classList.toggle("close");
 });
 
-/* Definindo a função para abrir a barra lateral ao clicar na caixa de busca */
-searchBtn.addEventListener("click", () => {
-    sidebar.classList.remove("close");
-});
-
 /* Definindo a função para alternar entre os modos claro e escuro */
 modeSwitch.addEventListener("click", () => {
     body.classList.toggle("dark");
