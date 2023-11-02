@@ -84,43 +84,35 @@ export default [
     ],
   },
   {
-    question: "11- ?",
+    question: "11- Escolha a opção que apresente somente estruturas de repetição",
     answers: [
-      { option: "A) ", correct: false },
-      { option: "B) ", correct: false },
-      { option: "C) ", correct: true },
+      { option: "A) for, while e if else", correct: false },
+      { option: "B) while, switch case, for", correct: false },
+      { option: "C) for, while, do while", correct: true },
     ],
   },
   {
-    question: "12- ?",
+    question: "12- Como é composta a estrutura básica de um for?",
     answers: [
-      { option: "A) ", correct: true },
-      { option: "B) ", correct:  false},
-      { option: "C) ", correct: false },
+      { option: "A) inicialização, condicional e iteração", correct: true },
+      { option: "B) inicialização, contador e repetição", correct:  false},
+      { option: "C) inicialização, condicional e while", correct: false },
     ],
   },
   {
-    question: "13- ?",
+    question: "13- O que é um for?",
     answers: [
-      { option: "A) ", correct:  false},
-      { option: "B) ", correct:  true},
-      { option: "C) ", correct: false },
+      { option: "A) é uma estrutura de condição que tem o ciclo executado por um tempo ou iteração e na quantidade de vezes que a maquina permitir", correct:  false},
+      { option: "B) é uma estrutura de repetição que seu ciclo será executado por um tempo ou condição e na quantidade de vezes explicitada", correct:  true},
+      { option: "C) é uma estrutura de repetição que seu ciclo será executado infinitamente ", correct: false },
     ],
   },
   {
-    question: "14- ?",
+    question: "14- Como se chama quando eu coloco um for dentro de outro for?",
     answers: [
-      { option: "A) ", correct: true },
-      { option: "B) ", correct:  false},
-      { option: "C) ", correct: false },
-    ],
-  },
-  {
-    question: "15- ?",
-    answers: [
-      { option: "A) ", correct: false },
-      { option: "B) ", correct:  false},
-      { option: "C) ", correct: true },
+      { option: "A) For aninhado", correct: true },
+      { option: "B) For alinhado", correct:  false},
+      { option: "C) For indireto", correct: false },
     ],
   },
   ];
